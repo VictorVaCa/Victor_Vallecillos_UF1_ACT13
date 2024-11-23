@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/square_purple"
+        android:layout_width="240dp"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="0dp"
+        android:layout_toLeftOf="@id/square_pink2"
+        android:background="#800080" />
+
+    <View
+        android:id="@+id/square_pink2"
+        android:layout_width="82dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FD1492" />
+
+
+    <View
+        android:id="@+id/rectangle_turquoise"
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:layout_below="@id/square_purple"
+        android:background="#40E0D0" />
+
+
+    <View
+        android:id="@+id/square_orange"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rectangle_turquoise"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#FFA500" />
+
+
+    <View
+        android:id="@+id/square_pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/square_orange"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/square_orange"
+        android:background="#FF1493" />
+
+</RelativeLayout>
