@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Victor_Vallecillos_UF1_ACT13</string>
+    <string name="main_button_to_second">Anar al Grid Layout</string>
+    <string name="main_button_to_third">Anar al Relative Layout</string>
+    <string name="second_button_back">Tornar al Table Layout</string>
+    <string name="third_button_back">Tornar al Table Layout</string>
 </resources>

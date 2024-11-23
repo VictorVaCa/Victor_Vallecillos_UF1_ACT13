@@ -1,6 +1,8 @@
 package com.example.victor_vallecillos_uf1_act13
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        val buttonToSecond = findViewById<Button>(R.id.button_to_second)
+        val buttonToThird = findViewById<Button>(R.id.button_to_third)
+
+        buttonToSecond.setOnClickListener {
+            val intent = Intent(this, GridLayout::class.java)
+            startActivity(intent)
+        }
+
+        buttonToThird.setOnClickListener {
+            val intent = Intent(this, LinearLayout::class.java)
+            startActivity(intent)
         }
     }
 }
